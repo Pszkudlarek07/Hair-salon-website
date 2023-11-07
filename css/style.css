@@ -1,0 +1,592 @@
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+/**********Header ***********/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 50rem;
+}
+
+.main-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 3.6rem;
+  padding: 3.2rem;
+  font-size: 3.6rem;
+  list-style-type: none;
+  font-weight: 400;
+  font-family: "Cuprum";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: #e0c184;
+  padding: 1rem;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #ffd700;
+}
+.header-logo-img {
+  margin: 2.4rem;
+  height: 25rem;
+  width: 25rem;
+  position: relative;
+}
+
+.heading-header-box {
+  position: absolute;
+  top: 130%;
+  left: 15%;
+}
+
+.heading-header {
+  color: #e0c184;
+  letter-spacing: 3rem;
+  font-size: 30rem;
+  font-weight: 400;
+  font-family: "Cuprum";
+}
+
+.wideo-class {
+  height: 100vh;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  position: fixed;
+  top: 15%;
+  right: 5%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 6.4rem;
+  width: 6.4rem;
+  color: #e0c184;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/**********hero-section ***********/
+.section-hero {
+  padding-top: 10rem;
+  margin-bottom: 9.6rem;
+}
+
+.comapany-logos-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.img-company-logos {
+  width: 14rem;
+  height: 5.5rem;
+}
+
+.redken {
+  width: 18rem;
+  height: 4.8rem;
+}
+
+/**********Introduction ***********/
+
+.section-introduction {
+  margin-bottom: 15rem;
+}
+
+.heading-introduction {
+  font-size: 4.8rem;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.img-introduction {
+  height: 65rem;
+  width: 75rem;
+}
+
+.img-plus-text-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.8rem;
+  justify-items: center;
+  align-items: center;
+}
+.introduction-text {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.introduction-text-paragraph {
+  font-size: 2.35rem;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+  font-family: "Mate";
+}
+
+/**********Portfolio ***********/
+
+.section-portfolio {
+  margin-bottom: 15rem;
+  height: 100vh;
+}
+
+.heading-porfolio {
+  font-size: 4.8rem;
+  margin-bottom: 4.8rem;
+  letter-spacing: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.gallery__img,
+.lil-nav__img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 1rem;
+}
+
+.gallery {
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.gallery__img {
+  scroll-snap-align: start;
+  margin-bottom: 1rem;
+  min-height: 80vh;
+  object-fit: cover;
+  padding-top: 1.2rem;
+}
+
+.lil-nav {
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  a {
+    height: 20rem;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+}
+
+.lil-nav__img {
+  object-fit: cover;
+  /* filter: saturate(0);
+  transition: 0.3s ease all; */
+
+  /* &:hover {
+    transform: scale(1.05);
+    filter: saturate(1);
+  } */
+}
+
+/**********Usługi ***********/
+.section-services {
+  margin-bottom: 15rem;
+}
+
+.heading-services {
+  font-size: 6.4rem;
+  font-weight: 400;
+  color: #e0c184;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 4.8rem;
+}
+.heading-service-table {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 25rem;
+  font-size: 2.4rem;
+}
+
+.section-services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/background-image-1.jpg);
+  height: 100vh;
+  max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.accordion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3.6rem;
+  align-items: center;
+}
+
+.accordion {
+  max-width: 120rem;
+}
+.accordion .contentBx {
+  margin: 3rem 2rem;
+}
+.accordion .contentBx .label {
+  padding: 1.4rem;
+  background-color: #000;
+  color: #e0c184;
+  cursor: pointer;
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+.accordion .contentBx .label::before {
+  content: "+";
+  top: 50%;
+  margin-right: 2rem;
+  transform: translateY(-50%);
+  font-size: 4.8rem;
+}
+
+.accordion .contentBx.active .label::before {
+  content: "-";
+}
+
+.accordion .contentBx .content {
+  position: relative;
+  background-color: #000;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion .contentBx.active .content {
+  height: 25rem;
+  padding: 1rem;
+}
+
+.depilation-list-item {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  border-bottom: 1px solid #2d271a;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #e0c184;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.price-span {
+  text-transform: lowercase;
+}
+
+/**********Team ***********/
+
+.section-team {
+  margin-bottom: 9.6rem;
+}
+
+.team-heading {
+  font-size: 6.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin-bottom: 6.4rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 4.8rem;
+}
+
+.team-grid-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 6.4rem;
+}
+
+.member-img {
+  height: 40rem;
+  width: 60rem;
+  display: block;
+}
+.--memberflexbox-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3.6rem;
+}
+.--memberflexbox-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3.6rem;
+}
+
+.team-member-img-plus-name {
+  padding: 0 6.4rem;
+}
+
+.--first-member,
+.--third-member {
+  margin-right: 5rem;
+}
+
+/* .--second-member {
+  margin-left: 15rem;
+} */
+
+.team-member-name-first {
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.4rem;
+  display: flex;
+  text-align: center;
+}
+
+.team-member-name-second {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 2.4rem;
+  letter-spacing: 0.4rem;
+}
+.scissors-icon {
+  height: 3.6rem;
+  margin-right: 1.6rem;
+  color: #e0c184;
+}
+.briefcase-icon {
+  height: 3.6rem;
+  margin-right: 1.6rem;
+  color: #e0c184;
+}
+
+.member-text-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/**********TESTIMONIALS ***********/
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/background-image-services.jpg);
+  height: 100vh;
+  max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-bottom: 1px solid #706142;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2.4rem;
+  row-gap: 1.2rem;
+  justify-items: center;
+  align-items: start;
+  padding-bottom: 15rem;
+}
+
+.testimonial-heading {
+  font-size: 4.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding-top: 4.8rem;
+  margin-bottom: 3.2rem;
+  margin-left: 4.8rem;
+  display: flex;
+  justify-content: flex-start;
+  color: #e0c184;
+}
+/* .testimonial-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.testimonial-customer-photo {
+  height: 5rem;
+  border-radius: 50%;
+  margin-top: 1.6rem;
+}
+
+.testimonial-text-box {
+  text-align: justify;
+  padding: 1.2rem 6.4rem;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.testimonials-text-plus-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.testimonial-customer-name {
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #706142;
+}
+
+/******FOOTER*********/
+
+footer {
+  background-color: #000;
+  color: #f1f3f5;
+  padding-bottom: 6.4rem;
+}
+
+.heading-footer {
+  text-align: center;
+  font-size: 6.4rem;
+  margin-bottom: 6.4rem;
+  padding-top: 12rem;
+  color: #e0c184;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.grid-box-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 2.8rem;
+  column-gap: 2.4rem;
+  padding: 6.4rem;
+  border: 1px solid #343a40;
+}
+.footer-logo-img {
+  height: 40rem;
+}
+
+.contact-info-footer {
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.adress-footer {
+  margin: 1.6rem 0;
+}
+
+.opening-hours-unorder-list {
+  list-style-type: none;
+  letter-spacing: 2px;
+}
+.contat-paragraph {
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+.phone-number-last,
+.email-adress-last {
+  margin-bottom: 4.8rem;
+}
+.phone-number,
+.email-adress,
+.adress-main {
+  color: #e0c184;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+.opening-hours-head {
+  font-size: 3.6rem;
+  margin-bottom: 3.2rem;
+  color: #e0c184;
+  font-weight: 700;
+}
+.copyright {
+  text-align: center;
+  margin-top: 3.6rem;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: 00;
+}
+.opening-hours-item {
+  margin-bottom: 1.6rem;
+  font-weight: 400;
+}
+
+.menu-footer {
+  margin-bottom: 9.6rem;
+}
+
+.main-nav-list-footer {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+  padding: 3.2rem;
+  font-size: 2.4rem;
+  list-style-type: none;
+  font-weight: 400;
+  font-family: "Cuprum";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.main-nav-link-footer {
+  text-decoration: none;
+  color: #e0c184;
+}
+
+.main-nav-link-footer:hover,
+.main-nav-link-footer:active {
+  color: #ffdb1a;
+}

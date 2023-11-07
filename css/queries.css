@@ -1,0 +1,406 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/* *****************
+BELOW 1664px | 1650px/16px=103.125| 104 * 16 = 1664px 
+***************** */
+@media (max-width: 104em) {
+  html {
+    font-size: 60%;
+  }
+  .heading-header {
+    font-size: 27rem;
+  }
+  .section-services {
+    height: 110vh;
+  }
+}
+
+/* *****************
+BELOW 1376px | 1366px/16px=85.375| 86 * 16 = 1376px 
+***************** */
+
+@media (max-width: 86em) {
+  html {
+    font-size: 58%;
+  }
+  .heading-header {
+    font-size: 25rem;
+  }
+  .introduction-text-paragraph {
+    font-size: 2.2rem;
+  }
+  .section-services {
+    height: 110vh;
+  }
+  .section-testimonials {
+    height: 100%;
+  }
+  .wrapper {
+    height: 80vh;
+  }
+}
+
+/* *****************
+BELOW 1280px | 1276px/16px=79.75| 80 * 16 = 1280px 
+***************** */
+
+@media (max-width: 80em) {
+  .heading-header-box {
+    left: 15%;
+  }
+  .main-nav-list {
+    font-size: 3rem;
+    gap: 2.4rem;
+  }
+  .member-img {
+    width: 55rem;
+  }
+  .heading-header {
+    font-size: 20rem;
+  }
+  .img-introduction {
+    height: 65rem;
+    width: 65rem;
+  }
+  .team-member-name-second {
+    gap: 1.2rem;
+  }
+}
+
+/* *****************
+BELOW 1104px | 1100px/16px=68.75| 69 * 16 = 1104px 
+***************** */
+
+@media (max-width: 69em) {
+  html {
+    font-size: 50%;
+  }
+  .main-nav-list {
+    font-size: 2.8rem;
+    gap: 1.6rem;
+  }
+  .introduction-text-paragraph {
+    font-size: 2.1rem;
+  }
+  .team-grid-col {
+    gap: 9.6rem;
+  }
+}
+
+/* *****************
+BELOW 960px  | 950px/16px=59.375| 60 * 16 = 960px 
+***************** */
+
+@media (max-width: 60em) {
+  /* MOBILE NAVIGATION */
+
+  .heading-header {
+    font-size: 15rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: #ffffffee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    transition: all 0.5s;
+
+    /* 1) Hide it visually , */
+    opacity: 0;
+    /* 2) Make it unaccessibile to mouse and keyboard */
+    pointer-events: none;
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    position: fixed;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .heading-header-box {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    font-size: 3.6rem;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .img-plus-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .img-introduction {
+    width: 70rem;
+    height: 60rem;
+  }
+  .section-services {
+    height: 150vh;
+  }
+  .grid-box-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+    justify-items: center;
+  }
+  .opening-hours {
+    justify-self: center;
+    align-items: center;
+  }
+  .footer-logo-img {
+    height: 25rem;
+  }
+  .opening-hours-unorder-list {
+    text-align: center;
+  }
+  .accordion .contentBx .label {
+    font-size: 2.3rem;
+  }
+  .member-img {
+    width: 55rem;
+    height: 45rem;
+  }
+  .team-member-img-plus-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .--extra-class-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading-footer {
+    font-size: 4.8rem;
+  }
+}
+
+/* *****************
+BELOW 800px  | 800px/16px=50| 50 * 16 = 800px 
+***************** */
+
+@media (max-width: 50em) {
+  .heading-header-box {
+    left: 10%;
+  }
+  .heading-header {
+    font-size: 13rem;
+  }
+
+  .img-company-logos {
+    width: 12rem;
+    height: 4.5rem;
+  }
+  .redken {
+    width: 14rem;
+  }
+
+  .comapany-logos-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .img-company-logos {
+    margin-right: 2.4rem;
+  }
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* *****************
+BELOW 656px  | 650px/16px=40.625| 41 * 16 = 656px 
+***************** */
+@media (max-width: 41em) {
+  .heading-header {
+    font-size: 10rem;
+  }
+  .img-company-logos {
+    width: 9rem;
+    height: 4rem;
+  }
+  .redken {
+    width: 12rem;
+  }
+
+  .img-introduction {
+    width: 50rem;
+    height: 45rem;
+  }
+
+  .team-member-img-plus-name {
+    padding: 0;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 100fr;
+    grid-template-rows: 5fr 3fr;
+    row-gap: 2.4rem;
+    height: 100vh;
+  }
+
+  .lil-nav {
+    grid-column: 2/3;
+    grid-row: -2/-2;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.8rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .gallery {
+    grid-column: 2/3;
+  }
+  .lil-nav__img {
+    height: 9.6rem;
+    width: 9.6rem;
+  }
+  .gallery__img {
+    min-height: 60vh;
+  }
+  .heading-footer {
+    line-height: 1.5;
+  }
+}
+
+/* *****************
+BELOW 544px  | 550px/16px=34.375| 34 * 16 = 544px 
+***************** */
+
+@media (max-width: 34em) {
+  .heading-header {
+    font-size: 8rem;
+  }
+  .heading-header-box {
+    left: 7%;
+  }
+  .accordion {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .section-services {
+    height: 210vh;
+  }
+  .testimonial-text-box {
+    padding: 0.6rem 2.4rem;
+  }
+  .main-nav-list-footer {
+    gap: 1.2rem;
+  }
+  .member-img {
+    width: 40rem;
+    height: 32rem;
+  }
+}
+
+/* *****************
+BELOW 464px  | 450px/16px=28.125| 29 * 16 = 464px 
+***************** */
+@media (max-width: 29em) {
+  .heading-header {
+    font-size: 6.4rem;
+  }
+  .img-introduction {
+    width: 40rem;
+    height: 35rem;
+  }
+}
+
+/* *****************
+BELOW 400px  | 400px/16px=25| 25 * 16 = 400px 
+***************** */
+
+@media (max-width: 25em) {
+  .heading-header {
+    font-size: 5rem;
+  }
+  .header-logo-img {
+    height: 15rem;
+    width: 15rem;
+  }
+  .section-services {
+    height: 230vh;
+  }
+  .member-img {
+    width: 35rem;
+    height: 25rem;
+  }
+  .team-member-name-first {
+    font-size: 2.4rem;
+  }
+  .testimonial-text-box {
+    font-size: 1.6rem;
+  }
+
+  .main-nav-list-footer {
+    font-size: 1.8rem;
+  }
+  .footer-logo-img {
+    height: 18rem;
+  }
+  .phone-number {
+    font-size: 2.4rem;
+  }
+  .heading-footer {
+    font-size: 3.6rem;
+  }
+}
+
+/* *****************
+BELOW 352px  | 350px/16px=22| 22 * 16 = 352px 
+***************** */
+
+@media (max-width: 25em) {
+  .heading-header {
+    font-size: 3.8rem;
+  }
+  .img-introduction {
+    width: 35rem;
+  }
+  .introduction-text-paragraph {
+    font-size: 1.8rem;
+  }
+  .section-services {
+    height: 240vh;
+  }
+  .member-img {
+    width: 30rem;
+    height: 23rem;
+  }
+  .grid-box-footer {
+    padding: 0;
+    font-size: 2.2rem;
+  }
+}
