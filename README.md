@@ -13,6 +13,9 @@ https://github.com/Pszkudlarek07/HomePage/assets/143716328/28019ac0-8530-45cb-9a
 
 ![image](https://github.com/Pszkudlarek07/HomePage/assets/143716328/b45f341e-8248-47b5-b89d-d96f8d091835)
 
+![image](https://github.com/Pszkudlarek07/Hair-salon-website/assets/143716328/dad230c9-158a-4e40-b71f-8e6c60e01a9e)
+
+
 
 
 </div>
